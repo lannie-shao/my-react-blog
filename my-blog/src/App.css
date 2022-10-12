@@ -1,0 +1,165 @@
+.App {
+  text-align: center;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  text-align:center;
+}
+
+.nav{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+
+  width:100%;
+  font-size:20px;
+  border-bottom:2px solid black;
+  border-size:border-box;
+}
+
+.nav__link{
+   display:flex;
+   flex-direction:row;
+   justify-content:flex-start;
+   align-items:center;
+   padding:0 1rem;
+}
+
+.nav__link p{
+  padding-right:2rem;
+  link-decoration:none;
+}
+
+.flex__center,.comment-form{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.section__padding{
+  padding:2rem 10rem;
+}
+.article__container-content{
+  margin-bottom:3rem;
+}
+.articleList__container-content{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:flex-start;
+}
+
+.nav__link a{
+  text-decoration:none;
+  padding: 10px 20px;
+}
+
+.nav__link a:hover {
+  background: grey;
+  color: white;
+}
+.vote{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+}
+
+.customer_button{
+  font-size:18px;
+  font-weight:500;
+  padding:0.5rem 1rem;
+  margin-right:2rem;
+  border:2px solid black;
+  border-radius:4px;
+  cursor:pointer;
+}
+
+.comment hr{
+  width:70%;
+}
+.comment-form form{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin:1rem 0;
+
+}
+
+.comment-form input,.comment-form textarea{
+  margin:1rem 0;
+  border:2px solid black;
+  padding:8px;
+}
+.submit{
+  cursor:pointer;
+  width:180px;
+  font-size:16px;
+  font-weight:600;
+  margin:0.5rem;
+  padding:8px;
+  border:none;
+  background-color:darkgray;
+  border-radius:4px;
+}
+.login__form{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:flex-start;
+}
+
+
+.login__form input{
+  font-size: 20px;
+  font-weith: 500;
+  margin-bottom:1rem;
+  outline: 1.5px solid black;
+  border-radius:2px;
+}
+
+.login__submit{
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+align-items:space-between;
+
+}
+.login__submit input,.login__submit button{
+  font-size:18px;
+  margin-right:3rem;
+  weight:600;
+  cursor:pointer;
+}
+
+.create_account__form{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.create_account__form input{
+  font-size: 20px;
+  font-weith: 500;
+  margin-bottom:1rem;
+  outline: 1.5px solid black;
+  border-radius:2px;
+}
+
+@media (max-width:550px){
+  .section__padding{
+   padding:2rem;
+  }
+
+  .articleList__container-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+}
